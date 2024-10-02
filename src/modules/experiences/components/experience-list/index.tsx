@@ -3,9 +3,9 @@ import ExperienceCard from "../experience-card";
 
 function ExperienceList() {
   return (
-    <ul className="">
+    <ul className="flex flex-col gap-4 group/highlight-hover">
       {EXPERIENCES.map((experience, index) => (
-        <li key={index}>
+        <li className="highlight-hover" key={index}>
           <ExperienceCard experience={experience} />
         </li>
       ))}

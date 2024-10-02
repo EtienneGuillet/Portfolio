@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  @apply leading-[26px];
+  @apply text-slate-400;
+  @apply text-lg;
+  @apply font-normal;
+}
+
+.highlight-hover {
+  @apply lg:group-hover/highlight-hover:[&:not(:hover)]:opacity-50;
+  @apply lg:hover:bg-slate-800/50;
+  @apply transition;
+  @apply lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)];
+  @apply lg:hover:drop-shadow-lg rounded-md;
+}
