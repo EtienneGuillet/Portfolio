@@ -11,7 +11,7 @@ function AdditionalLinkList({ additionalLinks }: AdditionalLinkListProps) {
     <div className="flex flex-wrap gap-2">
       {additionalLinks.map(({ label, url }, index) => (
         <Link
-          className="flex gap-1 items-center hover:text-teal-300 text-sm font-medium"
+          className="flex gap-1 items-center text-sm font-medium"
           key={index}
           url={url}
           target="_blank"

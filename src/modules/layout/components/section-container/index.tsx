@@ -5,14 +5,14 @@ type SectionContainerProps = {
   title: string;
   children: ReactNode;
   id?: string;
-  footerLink?: Omit<LinkProps, "className">;
+  footerLinks?: Omit<LinkProps, "className">[];
 };
 
 function SectionContainer({
   children,
   id,
   title,
-  footerLink,
+  footerLinks,
 }: SectionContainerProps) {
   return (
     <section
@@ -25,11 +25,12 @@ function SectionContainer({
         </h2>
       </div>
       {children}
-      {footerLink && (
-        <div className="mt-12">
-          <Link className="font-semibold text-base" {...footerLink} />
-        </div>
-      )}
+      {footerLinks &&
+        footerLinks.map((footerLink, index) => (
+          <div key={index} className="mt-12">
+            <Link className="font-semibold text-base" {...footerLink} />
+          </div>
+        ))}
     </section>
   );
 }

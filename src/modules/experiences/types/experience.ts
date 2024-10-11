@@ -9,4 +9,5 @@ export type Experience = {
   url: string;
   additionalLinks?: Link[];
   technologiesUsed: string[];
+  letterOfRecommendationLink?: string;
 };

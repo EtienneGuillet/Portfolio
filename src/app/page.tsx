@@ -79,16 +79,29 @@ export default function Home() {
         <SectionContainer
           id={Section.EXPERIENCES}
           title="Experiences"
-          footerLink={{
-            url: "pdf/resume.pdf",
-            children: "View Full Résumé",
-            arrowIcon: true,
-            target: "_blank",
-          }}
+          footerLinks={[
+            {
+              url: "pdf/resume.pdf",
+              children: "View Full Résumé",
+              arrowIcon: true,
+              target: "_blank",
+            },
+          ]}
         >
           <ExperienceList />
         </SectionContainer>
-        <SectionContainer id={Section.FREELANCE} title="Freelance">
+        <SectionContainer
+          footerLinks={[
+            {
+              url: "https://www.malt.fr/profile/etienneguillet",
+              children: "View My Malt Profile",
+              arrowIcon: true,
+              target: "_blank",
+            },
+          ]}
+          id={Section.FREELANCE}
+          title="Freelance"
+        >
           <FreelanceProjectList />
         </SectionContainer>
       </main>

@@ -1,3 +1,4 @@
+import PDFFileIcon from "../../../../icons/pdf-file";
 import ContainerLink from "../../../common/components/container-link";
 import Link from "../../../common/components/link";
 import TecnologyList from "../../../common/components/technology-list";
@@ -18,6 +19,7 @@ function ExperienceCard({
     description,
     technologiesUsed,
     additionalLinks,
+    letterOfRecommendationLink,
   },
 }: ExperienceCardProps) {
   return (
@@ -30,6 +32,16 @@ function ExperienceCard({
       <p className="text-sm leading-normal">{description}</p>
       {additionalLinks && additionalLinks.length > 0 && (
         <AdditionalLinkList additionalLinks={additionalLinks} />
+      )}
+      {letterOfRecommendationLink && (
+        <Link
+          className="flex gap-1 items-center text-sm font-medium"
+          url={letterOfRecommendationLink}
+          target="_blank"
+        >
+          <PDFFileIcon />
+          Letter of recommendation
+        </Link>
       )}
       <TecnologyList technologies={technologiesUsed} />
     </ContainerLink>
