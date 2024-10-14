@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import ExpandLink from "../expand-link";
 import { SectionLink } from "../../../../types/section";
+import ExpandLink from "../expand-link";
 
 type NavigationProps = {
   sections: SectionLink[];
@@ -21,8 +21,9 @@ function Navigation({ sections, className }: NavigationProps) {
         });
       },
       {
+        root: document.querySelector("#sections"),
         rootMargin: "0px",
-        threshold: 0.45,
+        threshold: 0.2,
       }
     );
 

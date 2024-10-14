@@ -39,7 +39,7 @@ export default function Home() {
           ))}
         </ul>
       </header>
-      <main className="pt-24 lg:w-1/2 lg:py-24 text-slate-200">
+      <main id="#sections" className="pt-24 lg:w-1/2 lg:py-24 text-slate-200">
         <SectionContainer id={Section.ABOUT} title="About">
           <div className="flex flex-col gap-4">
             <p>
