@@ -11,10 +11,10 @@ export const EXPERIENCES: Experience[] = [
         url: "https://packative.com/en",
         label: "Market place",
       },
-      {
-        url: "https://scm.packative.com",
-        label: "ERP",
-      },
+      // {
+      //   url: "https://scm.packative.com",
+      //   label: "ERP",
+      // },
     ],
     technologiesUsed: [
       "Next.JS",
@@ -28,7 +28,7 @@ export const EXPERIENCES: Experience[] = [
     companyName: "Packative",
     description:
       "Creation of a multi-tenant SASS CRM using state machines for handling state in React/Tailwind/Typescript. Development of a real-time supply chain manager allowing users to follow all the production steps of an item from the design to the shipping of a product using Reactflow. Lead developer for the design and implementation of a new marketplace server-side rendered using NextJs/Typescript. Development of a live packaging prices calculating system based on various options such as sizes, material, shape... Implementation of an editor allowing customers to have a 3D preview while designing their packaging. Integration of a CMS using homemade custom components with interactive UI/UX ensuring an easy publishing/writing of blog posts or pages by our marketing team. Maintenance and development of new features on our previous marketplace using Angular/Typescript and NGRX. Used Playwright and Jest for unit and end-to-end testing.",
-    letterOfRecommendationLink: "/pdf/letter-of-recommendation/packative.pdf",
+    // letterOfRecommendationLink: "/pdf/letter-of-recommendation/packative.pdf",
   },
   {
     startDate: "SEPT",
