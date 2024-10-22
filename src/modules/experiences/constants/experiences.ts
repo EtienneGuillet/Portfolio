@@ -2,8 +2,8 @@ import { Experience } from "../types/experience";
 
 export const EXPERIENCES: Experience[] = [
   {
-    startDate: "2023",
-    endDate: "NOW",
+    startDate: "APR 2023",
+    endDate: "OCT 2024",
     title: "Frontend developper",
     url: "https://packative.com/",
     additionalLinks: [
