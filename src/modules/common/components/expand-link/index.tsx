@@ -12,7 +12,7 @@ function ExpandLink({ url, children, active }: ExpandLinkProps) {
     <a className="group flex items-center gap-4 py-3" href={url}>
       <span
         className={clx(
-          "group-hover:w-16 h-[1px] group-hover:h-0.5 w-8 transition-all bg-slate-600 group-hover:bg-white content-['']",
+          "group-hover:w-16 h-[1px] group-hover:h-0.5 w-8 transition-all bg-slate-600 group-hover:bg-white content-[''] group-focus-visible:w-16 group-focus-visible:h-0.5 group-focus-visible:bg-white",
           {
             "w-16 bg-white h-0.5": active,
           }
