@@ -16,7 +16,7 @@ export default function Home() {
             Etienne Guillet
           </h1>
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-            Développeur Web Frontend
+            Frontend Developer
           </h2>
           <p className="leading-normal mt-4 max-w-xs">
             I build visually flawless, engaging, and accessible digital
