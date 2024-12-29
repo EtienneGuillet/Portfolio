@@ -20,3 +20,11 @@ p {
   @apply lg:hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)];
   @apply lg:hover:drop-shadow-lg rounded-md;
 }
+
+a {
+  @apply ring-purple-700;
+  @apply focus-visible:ring-2;
+  @apply ring-offset-4;
+  @apply ring-offset-slate-900;
+  @apply outline-none;
+}
