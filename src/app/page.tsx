@@ -29,7 +29,7 @@ export default function Home() {
             <li key={index} className="shrink-0">
               <a
                 title={title ?? href}
-                className="block text-slate-400 transition-colors hover:text-slate-200"
+                className="block text-slate-400 transition-colors hover:text-slate-200 focus-visible:text-slate-200"
                 href={href}
                 target="_blank"
               >
