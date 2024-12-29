@@ -16,7 +16,7 @@ export default function Home() {
             Etienne Guillet
           </h1>
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-            Frontend Engineer
+            Développeur Web Frontend
           </h2>
           <p className="leading-normal mt-4 max-w-xs">
             I build visually flawless, engaging, and accessible digital
@@ -29,7 +29,7 @@ export default function Home() {
             <li key={index} className="shrink-0">
               <a
                 title={title ?? href}
-                className="text-slate-400 transition-colors hover:text-slate-200"
+                className="block text-slate-400 transition-colors hover:text-slate-200"
                 href={href}
                 target="_blank"
               >
