@@ -4,7 +4,7 @@ export const EXPERIENCES: Experience[] = [
   {
     startDate: "APR 2023",
     endDate: "OCT 2024",
-    title: "Frontend developper",
+    title: "Frontend developer",
     url: "https://packative.com/",
     additionalLinks: [
       {
