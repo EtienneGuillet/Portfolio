@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
+
 import ContainerLink from "../../../common/components/container-link";
+import Gallery from "../../../common/components/gallery";
 import TecnologyList from "../../../common/components/technology-list";
 import { FreelanceProject } from "../../types/freelance";
 
@@ -16,12 +18,13 @@ function FreelanceProjectCard({
       header={
         images &&
         images.length > 0 && (
-          <Image
-            className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-            width={200}
-            height={48}
-            src={images[0]}
-            alt={"test"}
+          <Gallery
+            className="z-10 relative"
+            images={images.map((img) => ({
+              src: img,
+              alt: img,
+              loading: "lazy",
+            }))}
           />
         )
       }

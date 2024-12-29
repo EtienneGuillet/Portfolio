@@ -21,10 +21,14 @@ p {
   @apply lg:hover:drop-shadow-lg rounded-md;
 }
 
-a {
+a,
+button {
   @apply ring-purple-700;
   @apply focus-visible:ring-2;
+  @apply outline-none;
+}
+
+a {
   @apply ring-offset-4;
   @apply ring-offset-slate-900;
-  @apply outline-none;
 }

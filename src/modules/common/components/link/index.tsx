@@ -16,7 +16,7 @@ function Link({ url, children, target, className, arrowIcon, as }: LinkProps) {
   return (
     <CustomTag
       className={clx(
-        "group/link text-slate-200 transition-colors hover:text-teal-300 focus-visible:text-teal-300",
+        "group/link items-baseline text-slate-200 transition-colors hover:text-teal-300 focus-visible:text-teal-300",
         className
       )}
       href={url}
