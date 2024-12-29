@@ -1,7 +1,6 @@
 "use client";
 
 import { HTMLAttributeAnchorTarget, ReactNode } from "react";
-import { useView } from "../../../../hooks/use-view";
 import { clx } from "../../../../utils/clx";
 import Link from "../link";
 
@@ -22,11 +21,10 @@ function ContainerLink({
   target,
   className,
 }: ContainerLinkProps) {
-  const { isDesktopView } = useView();
-  const cardContent = (
+  return (
     <div
       className={clx(
-        "group max-sm:flex-col flex gap-x-4 gap-y-2 py-4 lg:px-6",
+        "group max-sm:flex-col flex gap-x-4 gap-y-2 py-4 lg:px-6 relative",
         className
       )}
     >
@@ -35,27 +33,21 @@ function ContainerLink({
       </header>
       <main className="flex flex-col gap-2 w-full lg:w-9/12">
         <h3 className="font-medium leading-snug">
-          <Link
-            className="lg:group-hover:text-teal-300"
-            target={target}
-            url={url}
-            arrowIcon
-            as={isDesktopView ? "span" : undefined}
-          >
-            {title}
-          </Link>
+          <div>
+            <Link
+              className="lg:group-hover:text-teal-300"
+              target={target}
+              url={url}
+              arrowIcon
+            >
+              {title}
+              <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:inset-0 lg:block"></span>
+            </Link>
+          </div>
         </h3>
         {children}
       </main>
     </div>
-  );
-
-  return isDesktopView ? (
-    <a href={url} target="_blank">
-      {cardContent}
-    </a>
-  ) : (
-    cardContent
   );
 }
 
