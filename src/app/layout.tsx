@@ -48,8 +48,8 @@ const inter = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.guilletetienne.com"),
-  title: "Etienne Guillet - Frontend Engineer",
-  description: "Frontend Engineer",
+  title: "Etienne Guillet - Frontend Developer",
+  description: "Frontend Developer",
   openGraph: {
     images: ["images/metadata/home.png"],
   },
