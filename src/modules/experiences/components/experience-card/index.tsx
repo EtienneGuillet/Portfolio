@@ -35,7 +35,7 @@ function ExperienceCard({
       )}
       {letterOfRecommendationLink && (
         <Link
-          className="flex gap-1 items-center text-sm font-medium"
+          className="flex gap-1 items-center text-sm font-medium z-30"
           url={letterOfRecommendationLink}
           target="_blank"
         >

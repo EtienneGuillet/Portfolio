@@ -8,7 +8,7 @@ type AdditionalLinkListProps = {
 
 function AdditionalLinkList({ additionalLinks }: AdditionalLinkListProps) {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap gap-2 z-30">
       {additionalLinks.map(({ label, url }, index) => (
         <Link
           className="flex gap-1 items-center text-sm font-medium"

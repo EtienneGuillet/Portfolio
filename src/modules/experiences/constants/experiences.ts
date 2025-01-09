@@ -39,7 +39,7 @@ export const EXPERIENCES: Experience[] = [
     companyName: "Lucca (HR and Finance software publisher)",
     description:
       "Designing and implementing key features for interview management and training request SaaS software using C#, .NET core framework, and Angular. Working in a Micro-services architecture environment between the different applications. Use of NGRX (Redux equivalent for Angular) as a store system for components and Jest for unit testing.",
-    letterOfRecommendationLink: "/pdf/letter-of-recommendation/ecotropy.pdf",
+    letterOfRecommendationLink: "/pdf/letter-of-recommendation/lucca.pdf",
   },
   {
     startDate: "2020",
